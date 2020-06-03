@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/fname"
+                android:layout_width="180dip"
+                android:layout_height="40dip"
+                android:hint="First Name"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:background="@drawable/outline_box"/>
+
+            <EditText
+                android:id="@+id/lname"
+                android:layout_width="180dip"
+                android:layout_height="40dip"
+                android:hint="Last Name"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/outline_box"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:textColor="@color/colorAccent"
+            android:text="Your name will be publicly displayed on Etsy. Both are optional. "/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:hint="Your Email"
+            android:paddingLeft="10dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/outline_box"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="180dip"
+                android:layout_height="40dip"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:background="@drawable/outline_box"/>
+
+            <EditText
+                android:id="@+id/cpassword"
+                android:layout_width="180dip"
+                android:layout_height="40dip"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/outline_box"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/uname"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:hint="Username"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/outline_box"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:text="By registering, you confirm that you accept our"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms of Use"
+            android:textColor="@color/colorBlue"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="and"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy"
+            android:textColor="@color/colorBlue"
+            />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/registerbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorBlue"/>
+
+    </LinearLayout>
+
+</FrameLayout>
